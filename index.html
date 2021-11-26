@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Blog Website</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Student Blogs</a>
+            <div class="menuToggle"></div>
+        </header>
+        <ul class="navigation">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#post" onclick="toggleMenu()">Blogs</a></li>
+        </ul>
+
+        <section class="banner" id="home">
+            <img src="img/Image0.jpeg" class="cover">
+            <div class="contentBox">
+                <h2>The soul of the students</h2>
+                <h4>A student blog website</h4>
+                <a href="#post" class="btn">Blogs</a>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="title">
+                <h2>About me</h2>
+            </div>
+            <div class="contentBox">
+                <div class="content">
+                    <p>Student Blogs is a free blogs site to help students irrespective of their class to 
+                        either learn a new skill, or manage your time, and also study tips. I will be posting
+                        the blogs twice a month related to the subjects mentioned above and also many more
+                        interesting topics.
+                        <br> <br>
+                        A little bit about me. I am a high school sophomore currently living in India. 
+                        Like you guys, 
+                        I am also a student who have many creative ideas and many ways and tips 
+                        on studying which I wanted to share with others. I am a beginner in blog 
+                        writing but experienced in giving advices to others related to studies. 
+                        I love coding, travelling, acting and also writing. 
+                        If you want to know how to study effectively, 
+                        manage your time and many more such things, then please go through my blogs. 
+                        And yes, I will be posting the blogs twice a month. 
+                       <br> <br>
+                        Also follow me on instagram at @atharwa_pancholi or else you can also reach
+                        out to me through my email address pancholiatharwa@gmail.com for any help 
+                        related to study advices, time management or anything. You can also share me 
+                        your ideas of topics which you want me to write about. 
+                    </p>
+
+                </div>
+                <div class="content">
+                </div>
+            </div>
+        </section>
+
+        <section class="post" id="post">
+            <div class="title">
+                <h2>Blogs</h2>
+                <p>
+                    Blogs related to study habits, study tips, time management, etc. I am still writing 
+                    these blogs so please stay tuned till then. 
+                </p>
+            </div>
+            <div class="contentBox">
+            <div class="postColumn">
+                <h1>How to study effectively?(tap the picture)</h1>
+                <div class="postBox">
+                    <div class="imgBx">
+                        <img src="img/image011.jpg" class="cover">
+                    </div>
+                    <div class="textBx">
+                        
+                        <h3>This question comes in the mind of many students who
+                            are struggling in their school life. But by using 
+                            these 6 tips
+                        </h3>
+                             <a href="HowToStudyEffectivelyBlog.html" class="btn">Read More</a>
+                             </div>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                <a href="#" class="btn mgt60">Load More</a>
+            </div>
+        </section>
+      <footer>
+          <a href="#" class="logo">Student Blogs</a>
+          <ul class="footerMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#post">Blogs</a></li>
+          </ul>
+          <p class="copyrightText">Copyright Ⓒ Atharwa Pancholi. All rights reserved.</p>
+      </footer>
+        <script>
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.onclick = function() {
+                menuToggle.classList.toggle('active');
+                navigation.classList.toggle('active');
+            }
+
+            window.addEventListener('scroll', function(){
+                const header = document.querySelector('header');
+                header.classList.toggle('sticky', window.scroll > 0)
+            })
+
+            function toggleMenu(){
+                menuToggle.classList.remove('active');
+                navigation.classList.remove('active');
+            }
+        </script>
+    </body>
+</html>
